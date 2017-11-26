@@ -1,4 +1,4 @@
-# Gridview-Design-Photography-Website
+# Gridview Design & Photography Website
 
 This is the website for Gridview Design & Photography, and it is my first official Github project.
 
