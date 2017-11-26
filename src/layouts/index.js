@@ -63,9 +63,6 @@ const Header = () => (
       <StyledLi>
         <NavLink to="/contact">Contact</NavLink>
       </StyledLi>
-      <StyledLi>
-        <NavLink to="/proof">Proof</NavLink>
-      </StyledLi>
     </StyledUl>
   </Navigation>
 )

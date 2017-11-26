@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+//import default from './index';
 
-export const MainLayout = styled.div `
+const PageLayout = styled.div `
   position: relative;
   margin: 2rem;
   padding: 0 2rem;
@@ -9,25 +10,27 @@ export const MainLayout = styled.div `
   @media (min-width: 768px){
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-columns: ${props => props.cols||"1fr 2fr 1fr"};
     grid-template-areas:
       ". title ."
-      ". content ."
+      ". content .";
+    h2{
+      grid-area: title;
+      font-size: 1.75rem;
+    }
+    .page-content{
+      grid-area: content;
+      p{
+        font-size: 1.125rem;
+      }
+    }
     }
 `;
-export const PageTitle = styled.h2 `
-  grid-area: title
-`
-export const PageContent = styled.div `
-  grid-area: content;
-`
 
-const StyledFooter = styled.footer `
-  background: purple;
-  width: 100vw;
-`
-
-export const Footer = () => ( <
-  StyledFooter > This is a footer < /StyledFooter>
+const MainLayout = (props) => (
+  <PageLayout>
+    <h2 className="title">{props.title}</h2>
+    <div className="page-content">{props.children}</div>
+  </PageLayout>
 )
+export default MainLayout

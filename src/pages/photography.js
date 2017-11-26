@@ -1,17 +1,13 @@
 /* eslint-disable react/prop-types */
 import React from "react"
 import Link from "gatsby-link"
-import {MainLayout, PageTitle, PageContent} from "../layouts/main-layout"
+import MainLayout from "../layouts/main-layout"
 
 
 const About = ({ transition }) => (
   <div style={transition && transition.style}>
-    <MainLayout>
-      <PageTitle>About</PageTitle>
-      <PageContent>
-        <p>GRIDVIEW Design and Photography, formerly Brandon Creek Photography, was established in early 2017. The goal was to form a company that offered a full range of visual arts services that did not end with just Photography, but also focused on Web and Graphic Design. With over a decade's worth of experience in both Graphic Design and Photography, it is our hope that our services can help you or your business. We service both individuals and businesses, and we try to remain competitive with our prices to help you save money without sacrificing quality. Reach out to us today to see how we can help meet your needs.
-        </p>
-      </PageContent>
+    <MainLayout title="Photography">
+      <p>Photography has been a passion of ours since 2005, and it continues to be a core staple to our business offerings. We offer our photography services to both individuals and businesses. We also provide professional retouching services to help your photos look their best. Perhaps you are needing someone to photograph you and your family, or maybe you are needing a full set of images for your brochure or website, we do it all.</p>
     </MainLayout>
 
   </div>

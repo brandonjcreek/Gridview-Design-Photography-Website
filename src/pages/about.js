@@ -1,16 +1,16 @@
 /* eslint-disable react/prop-types */
 import React from "react"
 import Link from "gatsby-link"
-import {MainLayout, PageTitle, PageContent, Footer} from "../layouts/main-layout"
+import MainLayout from "../layouts/main-layout"
 
 const About = ({ transition }) => (
   <div style={transition && transition.style}>
-    <MainLayout>
-        <PageTitle>About</PageTitle>
-        <PageContent>
-          <p>GRIDVIEW Design and Photography, formerly Brandon Creek Photography, was established in early 2017. The goal was to form a company that offered a full range of visual arts services that did not end with just Photography, but also focused on Web and Graphic Design. With over a decade's worth of experience in both Graphic Design and Photography, it is our hope that our services can help you or your business. We service both individuals and businesses, and we try to remain competitive with our prices to help you save money without sacrificing quality. Reach out to us today to see how we can help meet your needs.
-          </p>
-        </PageContent>
+    <MainLayout title="About">
+      <p>
+        GRIDVIEW Design and Photography offers a full range of visual arts services. 
+        Whether you are in need of a set of professional photos of yourself or your family, a logo for your business, or a modern and reactive website built with the latest technologies like React JS, GRIDVIEW has you covered. Our mission is to insure that you receive the highest quality of service throughout your project, and we also price our services to where we not only have a competitive edge in the marketplace, but we also strive to make the types of services that we provide more accessible to individuals and small businesses.<br />
+        So the next time you are needing professional photos, graphic design services, or even a website, give us a call and let us know how we can help. Let's make something together!</p><br />
+        <Link to="profile">Learn more about Brandon.</Link>
     </MainLayout>
   </div>
 )

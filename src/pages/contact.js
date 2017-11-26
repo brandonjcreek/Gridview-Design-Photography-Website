@@ -1,17 +1,27 @@
 /* eslint-disable react/prop-types */
 import React from "react"
 import Link from "gatsby-link"
-import {MainLayout, PageTitle, PageContent} from "../layouts/main-layout"
+import MainLayout from "../layouts/main-layout"
+import styled from 'styled-components'
+
+const StyledInput = styled.input`
+  width: 100%;
+  margin-bottom: 10px;
+`
+const StyledTextArea = styled.input`
+  width: 100%;
+  height: 10rem;
+`
 
 
 const About = ({ transition }) => (
   <div style={transition && transition.style}>
-    <MainLayout>
-      <PageTitle>Ready to work with us?</PageTitle>
-      <PageContent>
-        <p>GRIDVIEW Design and Photography, formerly Brandon Creek Photography, was established in early 2017. The goal was to form a company that offered a full range of visual arts services that did not end with just Photography, but also focused on Web and Graphic Design. With over a decade's worth of experience in both Graphic Design and Photography, it is our hope that our services can help you or your business. We service both individuals and businesses, and we try to remain competitive with our prices to help you save money without sacrificing quality. Reach out to us today to see how we can help meet your needs.
-        </p>
-      </PageContent>
+    <MainLayout title="Contact">
+      <p>Are you ready to work with me? Use the form below to tell me about your specific needs, and I will reach out to you to discuss in detail how I can help. You can also call me at (501) 303-6161 if you choose to do so.</p><br />
+      <StyledInput type="text" placeholder="Name"/><br />
+      <StyledInput type="text" placeholder="Phone"/><br />
+      <StyledInput type="text" placeholder="Email"/><br />
+      <StyledTextArea rows="4"/>
     </MainLayout>
 
   </div>
