@@ -1,0 +1,61 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.6/bin:/platform-tools:/Users/brandoncreek/mongodb/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/ImageMagick/bin
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  9.2.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "using-page-transitions",
+    "description": "Gatsby example site using page transitions",
+    "version": "1.0.0",
+    "author": "Steven Surgnier <stevensurgnier@gmail.com>",
+    "dependencies": {
+      "aws-sdk": "^2.156.0",
+      "axios": "^0.17.1",
+      "gatsby": "^1.9.102",
+      "gatsby-link": "^1.6.22",
+      "gatsby-plugin-react-helmet": "^1.0.8",
+      "react-transition-group": "^2.2.1",
+      "styled-components": "^2.2.3",
+      "xml-js": "^1.5.2",
+    },
+    "keywords": [
+      "gatsby"
+    ],
+    "license": "MIT",
+    "main": "n/a",
+    "scripts": {
+      "build": "gatsby build",
+      "develop": "gatsby develop",
+      "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+      "prettier": "^1.7.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Users/brandoncreek/Desktop/gridview-design-website/package.json: Unexpected token } in JSON at position 453
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:770:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:92:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:103:13
+      at <anonymous>

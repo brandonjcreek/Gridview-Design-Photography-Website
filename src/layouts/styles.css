@@ -1,0 +1,54 @@
+.layout-wrap{
+    position: relative;
+    min-height: calc(100vh - 90px);
+}
+
+.main-logo-wrap{
+ display: flex;
+ flex-flow: column;
+ justify-content: center;
+ height: 100%;
+ padding: 20%;
+}
+
+.cls-1 {
+    fill: url(#linear-gradient);
+}
+.cls-2 {
+    fill: url(#linear-gradient-2);
+}
+
+.cls-3 {
+    fill: url(#linear-gradient-3);
+}
+
+.cls-4 {
+    fill: url(#linear-gradient-4);
+}
+
+.cls-5 {
+    fill: url(#linear-gradient-5);
+}
+
+.cls-6 {
+    fill: url(#linear-gradient-6);
+}
+
+.cls-7 {
+    fill: url(#linear-gradient-7);
+}
+
+.cls-8 {
+    fill: url(#linear-gradient-8);
+}
+
+.cls-9 {
+    fill: url(#linear-gradient-9);
+}
+
+.st0{
+    fill:#FFFFFF;
+}
+.st1 {
+    enable-background: new;
+}

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -383,6 +385,7 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  font-family: 'Roboto',sans-serif;
 }
 figure {
   margin-left: 0;
