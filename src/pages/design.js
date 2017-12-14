@@ -18,6 +18,18 @@ const Even = styled.div`
 background: #555;
 `
 
+const Cta = styled.div`
+display: flex;
+background: #555;
+align-items: center;
+justify-content: center;
+h2{
+  color: #fff;
+  text-align: center;
+  aligh
+}
+`
+
 const Design = ({ transition }) => (
   <div style={transition && transition.style}>
     <DisplayLayout title="Design">
@@ -26,7 +38,9 @@ const Design = ({ transition }) => (
       <BottomDisplay>
         <Even></Even>
         <Odd></Odd>
-        <Even></Even>
+        <Cta>
+          <h2>Check out our design portfolio.</h2>
+        </Cta>
       </BottomDisplay>
     </DisplayLayout>
   </div>

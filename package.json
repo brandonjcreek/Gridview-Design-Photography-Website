@@ -1,8 +1,8 @@
 {
-  "name": "using-page-transitions",
-  "description": "Gatsby example site using page transitions",
+  "name": "Gridview Design & Photography ",
+  "description": "Website for Gridview Design & Photography",
   "version": "1.0.0",
-  "author": "Steven Surgnier <stevensurgnier@gmail.com>",
+  "author": "Brandon Creek",
   "dependencies": {
     "aws-sdk": "^2.156.0",
     "axios": "^0.17.1",
@@ -19,7 +19,8 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
+    "patch": "sed -i -e 's/if(c\\.initial) return;/if(!c||c.initial) return;/g' ./node_modules/extract-text-webpack-plugin/index.js",
+    "build": "npm run patch && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"

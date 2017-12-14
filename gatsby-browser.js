@@ -36,6 +36,10 @@ class ReplaceComponentRenderer extends React.Component {
     this.setState({ exiting: true, nextPageResources })
   }
 
+  componentWillMount(){
+    document.getElementsByTagName("body")[0].style.opacity=1
+  }
+
   componentDidMount() {
     window.addEventListener(historyExitingEventType, this.listenerHandler)
   }

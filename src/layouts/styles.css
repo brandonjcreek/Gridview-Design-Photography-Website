@@ -1,15 +1,13 @@
+a{
+    text-decoration: none;
+}
+
 .layout-wrap{
     position: relative;
     min-height: calc(100vh - 90px);
 }
 
-.main-logo-wrap{
- display: flex;
- flex-flow: column;
- justify-content: center;
- height: 100%;
- padding: 20%;
-}
+
 
 .cls-1 {
     fill: url(#linear-gradient);
@@ -52,3 +50,44 @@
 .st1 {
     enable-background: new;
 }
+.st0html5 {
+    opacity: 0.5;
+    fill: #FFFFFF;
+}
+
+.st1html5 {
+    fill: #EBEBEB;
+}
+
+.st2html5 {
+    fill: #FFFFFF;
+}
+.st0css3 {
+    fill: #FFFFFF;
+}
+
+.st1css3 {
+    opacity: 0.5;
+    fill: #EBEBEB;
+}
+
+.st2css3 {
+    opacity: 0.5;
+    fill: #FFFFFF;
+}
+
+.st3css3 {
+    fill: #EBEBEB;
+}
+.st0js {
+    fill: #FFFFFF;
+}
+.st0wp {
+    fill: #FFFFFF;
+}
+.st0react {
+    fill: #FFFFFF;
+}
+
+
+
