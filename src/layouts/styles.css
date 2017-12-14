@@ -1,0 +1,93 @@
+a{
+    text-decoration: none;
+}
+
+.layout-wrap{
+    position: relative;
+    min-height: calc(100vh - 90px);
+}
+
+
+
+.cls-1 {
+    fill: url(#linear-gradient);
+}
+.cls-2 {
+    fill: url(#linear-gradient-2);
+}
+
+.cls-3 {
+    fill: url(#linear-gradient-3);
+}
+
+.cls-4 {
+    fill: url(#linear-gradient-4);
+}
+
+.cls-5 {
+    fill: url(#linear-gradient-5);
+}
+
+.cls-6 {
+    fill: url(#linear-gradient-6);
+}
+
+.cls-7 {
+    fill: url(#linear-gradient-7);
+}
+
+.cls-8 {
+    fill: url(#linear-gradient-8);
+}
+
+.cls-9 {
+    fill: url(#linear-gradient-9);
+}
+
+.st0{
+    fill:#FFFFFF;
+}
+.st1 {
+    enable-background: new;
+}
+.st0html5 {
+    opacity: 0.5;
+    fill: #FFFFFF;
+}
+
+.st1html5 {
+    fill: #EBEBEB;
+}
+
+.st2html5 {
+    fill: #FFFFFF;
+}
+.st0css3 {
+    fill: #FFFFFF;
+}
+
+.st1css3 {
+    opacity: 0.5;
+    fill: #EBEBEB;
+}
+
+.st2css3 {
+    opacity: 0.5;
+    fill: #FFFFFF;
+}
+
+.st3css3 {
+    fill: #EBEBEB;
+}
+.st0js {
+    fill: #FFFFFF;
+}
+.st0wp {
+    fill: #FFFFFF;
+}
+.st0react {
+    fill: #FFFFFF;
+}
+
+
+

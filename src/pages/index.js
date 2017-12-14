@@ -1,59 +1,22 @@
 import React from 'react'
 import Link from 'gatsby-link'
+
+//Standard Components
 import styled from 'styled-components'
+import Icons from "../components/Icons"
+import LogoIcon from "../components/LogoIcon"
+import FooterData from "../components/FooterData"
+import HeaderWraps from "../components/HeaderWraps"
 
-const GridWrap = styled.div`
-display: block;
-background: #333;
+//Layout Components
+import GridWrap from "../components/Layout/GridWrap"
+import Block from "../components/Layout/Block"
 
+//static assets
+import Hero from '../img/hero.jpeg'
+import Gd from '../img/gd.jpeg'
+import Gear from '../img/gear.jpeg'
 
-@media(min-width: 768px){
-  height: calc(100vh - 90px);
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 10px;
-  grid-template-areas:
-    "one  one   two   two two"
-    "one  one   two   two two"
-    "one  one   logo  three three"
-    "five five  logo  three three"
-    "five five  four  four four"
-  }
-`
-
-
-const Block = styled.div`
-  position: relative;
-  background: ${props => props.color || '#fff'};
-  padding: ${props => props.padding || '0'};
-  grid-area: ${props => props.area};
-  border-radius: 2px;
-  overflow: hidden;
-  @media (max-width: 768px) {
-    margin-bottom: 10px;
-    min-height: 450px;
-  }
-`
-const Caption = styled.div`
-  opacity: 1;
-  transform: translateY(-100%);
-  width: 100%;
-  height: 100%;
-  background: ${props => props.color || '#555'};
-  color: white;
-  transition: all 300ms ease-in-out;
-  ${Block}:hover & {
-    opacity: 1;
-    transform: translateY(0%)
-  }
-`
-
-const ContentWrap = styled.div`
-  width: auto;
-  grid-column: 2/3;
-  justify-self: center;
-  align-self: center;
-`
 
 const Headline = styled.h1`
   font-size: 5rem;
@@ -62,22 +25,42 @@ const Headline = styled.h1`
   align-self: center;
   color: #eee ;
 `
+const StyledH2 = styled.h2`
+  line-height: 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+`
 
 const Index = ({ transition }) => (
   <div style={transition && transition.style}>
   <GridWrap>
-    <Block area='logo'>Logo</Block>
-    <Block area='one'>
-      <h1>Let's Make Something Together.</h1>
+      <Block padding="2rem" display="flex" flow="column" justify="center" img={Hero} area='one'>
+      <h1>Welcome to GRIDVIEW</h1>
+      <h3>Let's make something together.</h3>
     </Block>
-    <Block area='two' padding='20px'>Block Two</Block>
-    <Block area='three'>
-      <Caption>Block Three</Caption>
+      <Block img={Gd} area='two'>
+        <HeaderWraps>
+          <StyledH2>Design from beginning to end.</StyledH2>
+        </HeaderWraps>
     </Block>
-    <Block area='four'>
-      <Caption color="red">Block Four</Caption>
+      <Block img={Gear} area='three'>
+        <HeaderWraps>
+          <StyledH2>Quality Photography for any occasion.</StyledH2>
+        </HeaderWraps>
     </Block>
-    <Block area='five'>Block Five</Block>
+      <Icons />
+      <Block height="auto" color="#222" area='footer' display="flex" align="center">
+        <LogoIcon />
+        <FooterData>
+          <p>
+          ©2017 GRIDVIEW Design &amp; Photography<br/>
+          Home | About | Design | Photography | Contact<br/>
+          Terms &amp; Conditions | FAQ
+          </p>
+        </FooterData>
+    </Block>
   </GridWrap>
   </div>
 )
